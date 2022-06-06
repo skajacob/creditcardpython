@@ -13,7 +13,6 @@ class CreditCard():
 
     def check_credit_card_no(self, creditcard_no):
         """Se genera el metodo check_credit_card_no verifica si el numero de tarjeta es valido con el algoritmo de Luhn"""
-        list(creditcard_no)
         processed_digits = []
         for index, digit in enumerate(creditcard_no):
             if index % 2 != 0:
@@ -29,9 +28,8 @@ class CreditCard():
         else:
             print("INVALID")
 
-creditcard = CreditCard()
-credit_card_number = input("Insert your credit card number: ").strip()
-creditcard.check_credit_card_no(credit_card_number)   
+creditcard_no = input("Insert your credit card number: ").strip()
+CreditCard().check_credit_card_no(creditcard_no)   
 
     
 
