@@ -28,7 +28,7 @@ class CreditCard():
             total_1= sum(creditcard_no_list[::2]) + sum(processed_digits[1::2])
             total_2= sum(creditcard_no_list[1::2]) + sum(processed_digits[::2])
             if total_1 % 10 == 0 or total_2 % 10 == 0:
-                print(format(type_card[creditcard_no[:2]])) 
+                print(type_card[creditcard_no[:2]]) 
         else:
             print("INVALID")
     
